@@ -19,7 +19,7 @@ public class HospitalController {
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Hospital> getAllHospitals() {
-		return Arrays.asList(new Hospital(1, "Virgen de Altagracia2"), new Hospital(2, "Virgen de Altagracia"),
+		return Arrays.asList(new Hospital(1, "Virgen de Altagracia"), new Hospital(2, "Virgen de Altagracia"),
 				new Hospital(3, "Virgen de Altagracia2"));
 	}
 
