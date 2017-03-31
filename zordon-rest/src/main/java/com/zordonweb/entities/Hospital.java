@@ -1,8 +1,15 @@
 package com.zordonweb.entities;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "Entidad Hospital", description = "Contiene la información de un hospital")
 public class Hospital {
 
+	@ApiModelProperty(value = "Identificador del hospital")
 	private Integer id;
+
+	@ApiModelProperty(value = "Nombre del hospital")
 	private String name;
 
 	public Hospital(Integer id, String name) {
